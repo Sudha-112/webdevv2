@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Services in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"media= "screen and (max-width: 1100px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Lugrasimo&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+    :root{
+        --navbar-height: 40px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+    }
+    
+    #navbar ul{
+        display: flex;
+    }
+    
+    #navbar ul li{
+        list-style: none;
+        font-size: 25px;
+    }
+    
+    #navbar ul li a{
+        transition: background-color 0.5s ease-in;
+        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Lugrasimo', cursive;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+        transform: skew(9deg);
+        color: black;
+        background-color: rgb(173, 205, 179)
+    }
+    
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    #logo{
+        margin: 10px 20px;
+    }
+
+    #logo img{
+        height: 100px;
+        margin: 0px 0px;
+        filter: invert(1);
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        padding: 2px 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home::before{
+        content: "";
+        background-image: url(background.jpg.jpg);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 495%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+
+    #home h1{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+
+    #home p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        margin: 3px;
+    }
+
+    .h-primary{
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+        padding: 12px;
+    }
+
+    .btn{
+        color: white;
+        padding: 9px 10px;
+        margin: 15px;
+        font-size: 1.5rem;
+        border: 2px solid wheat;
+        background-color: brown;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: rgb(31, 26, 135);
+        transition: background-color 1s ease-out;
+        transform: scale(1.3);
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    .h-secondary{
+        font-family: 'Lugrasimo', cursive;
+        font-size: 2rem;
+        padding: 12px;
+        text-decoration: underline;
+    }
+    
+    #services{
+        margin: 34px;
+        display: flex;
+        
+    }
+
+    #services .box{
+        color: white;
+        background: url('sudha2.jpg');
+        height: 100%;
+        width: 100%;
+        border: 2px solid red;
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 27px;
+        background-color: rgb(255, 252, 252);
+        opacity: 0.9;
+    }
+
+    #services .box img{
+        height: 156px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p{
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+    }
+
+    #client-section{
+        background: url('sudha2.jpg');
+        height: 100%;
+        width: 100%;
+        height: 344px;
+    }
+
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background: url('sudha2.jpg');
+        width: 100%;
+        height: 49%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #client-item{
+        padding: 34px;
+    }
+
+    #client img{
+        padding: 43px;
+        height: 70px;
+    }
+
+    #Contact{
+        position: relative;
+    }
+
+    #Contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        z-index: -1;
+        opacity: 0.9;
+        background: url('sudha9.jpg');
+        padding: 34px;
+        
+    }
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+    #contact-box form{
+        width: 40%;
+    }
+
+    #contact-box label{
+        font-size: 1.3rem;
+        font-family: 'Lugrasimo', cursive;
+        
+    }
+
+    #contact-box input,
+    #contact-box textarea{
+         width: 100%;
+         padding: 0.5rem;
+         border-radius: 9px;
+         font-size: 1.1rem;
+    }
+
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAZlBMVEUDAwP9/f0AAAD///9RUVHg4OBxcXHOzs5UVFRMTExYWFjCwsJ0dHT09PSgoKCAgIDs7OwzMzPZ2dk+Pj60tLS7u7uWlpasrKxhYWGHh4cmJiZoaGiOjo6mpqY4ODgbGxsQEBBFRUUUpGj7AAADPUlEQVRoge2Z2Y7qMAyGG7uhOy0tlAF6WN7/JY+zdgHmqgZplF9IE4VRP5zEWxpFQUFBQUFBQUFBQUF/WfAlLOkb1K08foO7QcTTp8Dj0kJG3B94mufB1ocRFbe5H6f7EyMZOsTmbJ8P98QPbxIxZ+TeK0zuDpbjxQ2hQLFjXGnYDaVf2x7/+fFPf+XB2oMD0Dq7oEVp9xSi4gaT/1oRuzuZzYQksb+gq1DYPSVXNnPnYWWzIcHEPHqLgxsIPKghwAn3Zq7AdmXupu3No3vEUkXIsyAuHWLSFtF+Wbfl2gsNl402jswU/27wkPRXYNORG9MP2OrvLuX6TgwwDMq4hHhYSaGwNBJ6pE4YQN1zxA5y0iS9DgaHButHeOziIuEJWXCusHK8pbAS4swUOSgFvaFqcs0VsCho/AKWfImBQvJ7XTjj8yF5p4I3Af+ijyFfTa2PvTRypiaDbDnFsMe6jpsphXQ5tWHhLvw1hng59fe4Zj1n3MkUGxdb5as6bDnudIqPGytv6Wbch5rKmLmqbKdzPOXGoCMoLzd95m4+wT2oMDXnVrQGjNzSHFkCz7kazMjNKg923OjgwWxc6kUseA9X5a6Kq/oiDc5Nvcdhb3eLbVQ66L0mbj5MwKqc5eDWrWq1NaXQSSKm9a4dWCgw03lO4DEFp3SuqHdIbLDMCMzDper8YZdagRVXELjwYMlQUqo9JXAsnMWnXPuRBwvMbw+muEHtXlo5MBgudjC60+pYF69yyJ0fRzZepeDBGVucpI7P+XE8ch147S505DY7sBZPuBHsBFucTM3hoabPp+LRXu1MKFKODe5txwk+73ru0XzVc9Tu4By1XOTB1KWqgqn/hcY4apfNuFlndqDhalVgZ+yS83WOpZnmu7BzCypnXMnmQ54Le5t9ZvWGzcqc/e+k45/1CxRAefvfa/WSWzFdi47gzUsuR2G1AG/xiWuu65i5tsCYcJHpwmwBvjeL89zcP4DVGWLmvyzZ4CW4nnHZ7umeuDp8WC5vwFiCVZGuudwBYwGm+kJzeV/fvACXlsuYDV6Dj5r78TeiAJJKWsa737fgrlOfT2OVxdE33ncHBQUFBQUFBQUFBf15/QffFCEqILPz+QAAAABJRU5ErkJggg==" alt="MyOnlineMeal.com">
+        </div>
+
+        <ul>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Services</a></li>
+            <li class="items"><a href="#">About Us</a></li>
+            <li class="items"><a href="#">Contact Us</a></li> 
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>WELCOME TO THE BEST RESTAURANT OF YOUR COUNTRY.</p>
+        <p> HERE YOU WILL GET ALL TYPE OF FOODS INCLUDING ALL TYPE OF DRINKS</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="sudha3.jpg" alt="MyOnlineMeal.com">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">HERE YOU CAN RECIEVE YOUR ORDER WITHIN 30 MINUTES. AND IF THE ORDER IS LATE THEN YOUR ORDER WILL BE ABSOLUTELY FREE...... AND IF YOU PLACE ORDER IN OUR RESTAURANT THEN RECIEVE YOUR ORDER WITHIN 15 MINUTES. GET IMMEDIATE CASHBACK ON FIRST ORDER WITH ONLINE PAYMENT</p>
+            </div>
+            <div class="box">
+                <img src="sudha11.jpg" alt="MyOnlineMeal.com">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">THIS IS THE ONLY RESTAURANT IN YOUR AREA THAT SUPPORTS THE BEST FOOD CATERING AND TRUSTED BY THE GOVERNMENT OF INDIA. WE CAN DELIVER OUR FOOD IN EVERY PART OF INDIA. SMALL TO SMALL TOWNS AND EVEN RURAL AREAS. OUR FOOD IS PREPARES BY TOP CHEF OF INDIA WHO IS PART AND WINNER OF MASTER CHEF</p>
+            </div>
+            <div class="box">
+                <img src="sudha4.jpg" alt="MyOnlineMeal.com">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">YOU CAN ALSO GIVE BULK ORDERING IF YOU HAVE PARTY IN YOUR HOUSE. WE HAVE MADE THE RECORD TO GIVE ORDER IN BULK. AT A SINGLE TIME WE HAVE DELIEVERED MORE THAN 80 PIZZAS , 200 DRINKS AND 50 + OTHER ITEMS. ALSO WE CAN DELIEVER YOUR ORDER IN RURAL AREAS WITH SAME TERMS AND CONDITIONS</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="sudha7.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="sudha1.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="sudha5.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="sudha6.jpg" alt="Our Clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="Name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your Number">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineMeal.com. All right reserved
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!--CSS link-->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="container"><!--container layout-->
+        <h2>Bootstrap</h2>
+        <p>
+            Man is a social being. He lives in society. As a gregarious and social being he lives and interacts with so
+            many people all through his life. In our interactions with people we make many friends. We enjoy the company
+            of our friends; in fact that is why they are our friends. We influence our friends, and likewise our friends
+            influence us. Friendships therefore have a great bearing on our life. That is why we must be choosy when we
+            make friends, because we want long lasting true friends whom we may trust and who, in turn, can trust us.
+            Friendship calls for loyalty. If you cannot be loyal to your friends, you will lose them. In a real
+            friendship that has matured over time, there are not even any expectations between two friends. You love
+            your friend whatever may happen, and you love not for any reason or to get anything in return from your
+            friend. And this is the sentiment shared by your friend too. Such a friendship is a real friendship and it
+            gives true joy and contentment. Even troubles and miseries that life may bring seem insignificant when you
+            have such a friendship to bank on.</p>
+    </div>
+    <div>
+        <button>Click me</button>
+        <button class="btn  btn-danger">Click me</button><!--button component-->
+    </div>
+    <div>
+        <h1>Example heading <span class="badge badge-secondary">New</span></h1><!--badge component-->
+    </div>
+    <div>
+        <button class="btn btn-primary">Followers<span
+                class="badge bg-danger">100+</span></button><!--badge component-->
+    </div>
+    <br>
+    <div class="alert alert-danger" role="alert"><!--alert component-->
+        Download Failed! Please try again.
+    </div>
+    <br>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+    </div><!--button  group component-->
+    <br><!--navbar component-->
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:yellow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <br>
+    <!--Card component-->
+    <div class="card" style="width: 18rem;">
+        <img src="women.jpeg" class="card-img-top" alt="card">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    <br>
+    <!--Grid layout-->
+    <div class="container">
+        <div class="row">
+            <div class="col bg-success">ONE</div>
+            <div class="col bg-primary">TWO</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 bg-success">ONE</div><!--Grid options are used to make the sites responive-->
+            <div class="col-md-4 bg-danger">TWO</div>
+        </div>
+        <!--Grid(vertical component)-->
+        <div class="row align-items-end">
+            <div class="col bg-success">Man is a social being. He lives in society. As a gregarious and social being he
+                lives and interacts with so
+                many people all through his life. In our interactions with people we make many friends. We enjoy the
+                company
+                of our friends; in fact that is why they are our friends. We influence our friends, and likewise our
+                friends
+                influence us.Man is a social being. He lives in society. As a gregarious and social being he
+                lives and interacts with so
+                many people all through his life.</div>
+            <div class="col bg-warning">Man is a social being. He lives in society. As a gregarious and social being he
+                lives and interacts with so
+                many people all through his life. In our interactions with people we make many friends. We enjoy the
+                company
+                of our friends; in fact that is why they are our friends. We influence our friends, and likewise our
+                friends
+                influence us.</div>
+            <div class="col bg-success">Man is a social being. He lives in society. As a gregarious and social being he
+                lives and interacts with so
+                many people all through his life. In our interactions with people we make many friends. We enjoy the
+                company
+                of our friends; in fact that is why they are our friends. We influence our friends, and likewise our
+                friends
+                influence us.</div>
+            <div class="col bg-primary align-self-start">Man is a social being. He lives in society. As a gregarious and
+                social being he
+                lives and interacts with so
+                many people all through his life. In our interactions with people we make many friends. We enjoy the
+                company
+                of our friends; in fact that is why they are our friends. We influence our friends, and likewise our
+                friends
+                influence us. </div>
+          
+
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--JS link-->
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.card{
+    height:620px;
+    width:375px;
+    border:2px solid black;
+    border-radius:10px 10px 10px 10px;
+    
+}
+#cat{
+   height:180px;
+   width:355px;
+   border-radius:20px 20px 20px 20px;
+   padding:10px 10px 10px 10px;
+}
+#dog{
+    height:180px;
+    width:355px;
+    border-radius:20px 20px 20px 20px;
+    padding:10px 10px 10px 10px;
+}
+span{
+    color:rgb(160, 160, 31);
+}
+h2{
+    color:red;
+}
+p{
+    padding:5px;
+}
+h3{
+
+    padding:5px;
+}
+#pets{
+    display:flex;
+    justify-content:space-evenly;
+}
+@media (max-width:375px){
+    #pets{
+        flex-wrap:wrap;
+    }
+}
